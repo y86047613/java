@@ -14,17 +14,18 @@
 	
 	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
 		<!-- MySQL数据库配置 -->
-		<!--
+		
 		<property name="url" value="jdbc:mysql://localhost:3306/jeefw?useUnicode=true&amp;characterEncoding=utf-8" />
 		<property name="username" value="root" />
-		<property name="password" value="123456" />
-		-->
+		<property name="password" value="root" />
+		
 		
 		<!-- SQL Server数据库配置 -->
+		<!--
 		<property name="url" value="jdbc:sqlserver://127.0.0.1:1433;DatabaseName=jeefwtwo" />
 		<property name="username" value="sa" />
 		<property name="password" value="Yy106.75" />
-		
+		-->	
 		<!-- Oracle数据库配置 -->
 		<!-- 
 		<property name="url" value="jdbc:oracle:thin:@127.0.0.1:1521:jeefw" />
@@ -94,17 +95,18 @@
 	
 	<bean id="dataSource2" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
 		<!-- MySQL数据库配置 -->
-		<!--
+		
 		<property name="url" value="jdbc:mysql://localhost:3306/jeefw?useUnicode=true&amp;characterEncoding=utf-8" />
 		<property name="username" value="root" />
-		<property name="password" value="123456" />
-		-->
+		<property name="password" value="root" />
+		
 		
 		<!-- SQL Server数据库配置 -->
+		<!--  
 		<property name="url" value="jdbc:sqlserver://127.0.0.1:1433;DatabaseName=QPAccountsDB" />
 		<property name="username" value="sa" />
 		<property name="password" value="Yy106.75" />
-		
+		-->
 		<!-- Oracle数据库配置 -->
 		<!-- 
 		<property name="url" value="jdbc:oracle:thin:@127.0.0.1:1521:jeefw" />
@@ -172,17 +174,19 @@
 	
 	<bean id="dataSource3" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
 		<!-- MySQL数据库配置 -->
-		<!--
+	
 		<property name="url" value="jdbc:mysql://localhost:3306/jeefw?useUnicode=true&amp;characterEncoding=utf-8" />
 		<property name="username" value="root" />
-		<property name="password" value="123456" />
-		-->
+		<property name="password" value="root" />
+
 		
 		<!-- SQL Server数据库配置 -->
+		<!-- 
 		<property name="url" value="jdbc:sqlserver://127.0.0.1:1433;DatabaseName=QPGameScoreDB" />
 		<property name="username" value="sa" />
 		<property name="password" value="Yy106.75" />
-		
+		-->
+		 
 		<!-- Oracle数据库配置 -->
 		<!-- 
 		<property name="url" value="jdbc:oracle:thin:@127.0.0.1:1521:jeefw" />
@@ -250,16 +254,18 @@
 	
 	<bean id="dataSource4" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
 		<!-- MySQL数据库配置 -->
-		<!--
+
 		<property name="url" value="jdbc:mysql://localhost:3306/jeefw?useUnicode=true&amp;characterEncoding=utf-8" />
 		<property name="username" value="root" />
-		<property name="password" value="123456" />
-		-->
+		<property name="password" value="root" />
+
 		
 		<!-- SQL Server数据库配置 -->
+		<!--  
 		<property name="url" value="jdbc:sqlserver://127.0.0.1:1433;DatabaseName=QPTreasureDB" />
 		<property name="username" value="sa" />
 		<property name="password" value="Yy106.75" />
+		-->
 		
 		<!-- Oracle数据库配置 -->
 		<!-- 

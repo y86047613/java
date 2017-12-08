@@ -583,7 +583,7 @@ public class SysUserController
             "/" + fileName;
           Long sysUserId = ((SysUser)request.getSession().getAttribute("SESSION_SYS_USER")).getId();
           this.attachmentService.deleteByProperties(new String[] { "type", "typeId" }, 
-            new Object[] { Short.valueOf(1), sysUserId });
+            new Object[] { Short.valueOf((short) 1), sysUserId });
           Attachment attachment = new Attachment();
           attachment.setFileName(originalFilename);
           attachment.setFilePath(destinationFilePath);

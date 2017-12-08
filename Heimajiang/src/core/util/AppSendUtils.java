@@ -12,6 +12,7 @@ public class AppSendUtils
   /* Error */
   public static String connectURL(String dest_url, String commString)
   {
+	return commString;
     // Byte code:
     //   0: ldc 27
     //   2: astore_2

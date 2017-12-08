@@ -83,7 +83,7 @@ public class SysUserServiceImpl
     entity.setPassword(sysuser.getPassword());
     entity.setStatus(sysuser.getStatus());
     entity.setLastLoginTime(sysuser.getLastLoginTime());
-    Attachment attachment = (Attachment)this.attachmentDao.getByProerties(new String[] { "type", "typeId" }, new Object[] { Short.valueOf(1), sysuser.getId() });
+    Attachment attachment = (Attachment)this.attachmentDao.getByProerties(new String[] { "type", "typeId" }, new Object[] { Short.valueOf((short) 1), sysuser.getId() });
     if (attachment != null) {
       entity.setFilePath(attachment.getFilePath());
     } else {
