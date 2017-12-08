@@ -21,11 +21,18 @@
 		
 		
 		<!-- SQL Server数据库配置 -->
+
 		<!--
 		<property name="url" value="jdbc:sqlserver://127.0.0.1:1433;DatabaseName=jeefwtwo" />
 		<property name="username" value="sa" />
 		<property name="password" value="Yy106.75" />
 		-->	
+
+		<!--<property name="url" value="jdbc:sqlserver://127.0.0.1:1433;DatabaseName=jeefwtwo" />
+		<property name="username" value="sa" />
+		<property name="password" value="Yy106.75" />-->
+		
+
 		<!-- Oracle数据库配置 -->
 		<!-- 
 		<property name="url" value="jdbc:oracle:thin:@127.0.0.1:1521:jeefw" />
@@ -52,9 +59,9 @@
 	<bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
 		<property name="hibernateProperties">
 			<props>
-				<!-- <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop> -->
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop> 
 				<!-- SQL Server的Dialect方言配置 --> 
-				<prop key="hibernate.dialect">org.hibernate.dialect.SQLServer2012Dialect</prop>
+				<!-- <prop key="hibernate.dialect">org.hibernate.dialect.SQLServer2012Dialect</prop>-->
 				<!-- Oracle的Dialect方言配置 --> 
 				<!-- <prop key="hibernate.dialect">org.hibernate.dialect.OracleDialect</prop> -->
 				<prop key="hibernate.show_sql">true</prop>
@@ -102,11 +109,18 @@
 		
 		
 		<!-- SQL Server数据库配置 -->
+
 		<!--  
 		<property name="url" value="jdbc:sqlserver://127.0.0.1:1433;DatabaseName=QPAccountsDB" />
 		<property name="username" value="sa" />
 		<property name="password" value="Yy106.75" />
 		-->
+
+		<!--<property name="url" value="jdbc:sqlserver://127.0.0.1:1433;DatabaseName=QPAccountsDB" />
+		<property name="username" value="sa" />
+		<property name="password" value="Yy106.75" />-->
+		
+
 		<!-- Oracle数据库配置 -->
 		<!-- 
 		<property name="url" value="jdbc:oracle:thin:@127.0.0.1:1521:jeefw" />
@@ -133,9 +147,9 @@
 	<bean id="sessionFactory2" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
 		<property name="hibernateProperties">
 			<props>
-				<!-- <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop> -->
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
 				<!-- SQL Server的Dialect方言配置 --> 
-				<prop key="hibernate.dialect">org.hibernate.dialect.SQLServer2012Dialect</prop>
+				<!-- <prop key="hibernate.dialect">org.hibernate.dialect.SQLServer2012Dialect</prop> -->
 				<!-- Oracle的Dialect方言配置 --> 
 				<!-- <prop key="hibernate.dialect">org.hibernate.dialect.OracleDialect</prop> -->
 				<prop key="hibernate.show_sql">true</prop>
@@ -174,7 +188,7 @@
 	
 	<bean id="dataSource3" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
 		<!-- MySQL数据库配置 -->
-	
+
 		<property name="url" value="jdbc:mysql://localhost:3306/jeefw?useUnicode=true&amp;characterEncoding=utf-8" />
 		<property name="username" value="root" />
 		<property name="password" value="root" />
@@ -187,6 +201,19 @@
 		<property name="password" value="Yy106.75" />
 		-->
 		 
+
+		
+		<property name="url" value="jdbc:mysql://localhost:3306/jeefw?useUnicode=true&amp;characterEncoding=utf-8" />
+		<property name="username" value="root" />
+		<property name="password" value="root" />
+		
+		
+		<!-- SQL Server数据库配置 -->
+		<!--<property name="url" value="jdbc:sqlserver://127.0.0.1:1433;DatabaseName=QPGameScoreDB" />
+		<property name="username" value="sa" />
+		<property name="password" value="Yy106.75" />-->
+		
+
 		<!-- Oracle数据库配置 -->
 		<!-- 
 		<property name="url" value="jdbc:oracle:thin:@127.0.0.1:1521:jeefw" />
@@ -213,9 +240,9 @@
 	<bean id="sessionFactory3" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
 		<property name="hibernateProperties">
 			<props>
-				<!-- <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop> -->
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
 				<!-- SQL Server的Dialect方言配置 --> 
-				 <prop key="hibernate.dialect">org.hibernate.dialect.SQLServer2012Dialect</prop> 
+				 <!-- <prop key="hibernate.dialect">org.hibernate.dialect.SQLServer2012Dialect</prop>  -->
 				<!-- Oracle的Dialect方言配置 --> 
 				<!-- <prop key="hibernate.dialect">org.hibernate.dialect.OracleDialect</prop> -->
 				<prop key="hibernate.show_sql">true</prop>
@@ -255,6 +282,7 @@
 	<bean id="dataSource4" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
 		<!-- MySQL数据库配置 -->
 
+
 		<property name="url" value="jdbc:mysql://localhost:3306/jeefw?useUnicode=true&amp;characterEncoding=utf-8" />
 		<property name="username" value="root" />
 		<property name="password" value="root" />
@@ -266,6 +294,17 @@
 		<property name="username" value="sa" />
 		<property name="password" value="Yy106.75" />
 		-->
+
+		<property name="url" value="jdbc:mysql://localhost:3306/jeefw?useUnicode=true&amp;characterEncoding=utf-8" />
+		<property name="username" value="root" />
+		<property name="password" value="root" />
+		
+		
+		<!-- SQL Server数据库配置 -->
+		<!--<property name="url" value="jdbc:sqlserver://127.0.0.1:1433;DatabaseName=QPTreasureDB" />
+		<property name="username" value="sa" />
+		<property name="password" value="Yy106.75" />-->
+
 		
 		<!-- Oracle数据库配置 -->
 		<!-- 
@@ -293,9 +332,9 @@
 	<bean id="sessionFactory4" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
 		<property name="hibernateProperties">
 			<props>
-				<!-- <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop> -->
+				 <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop> 
 				<!-- SQL Server的Dialect方言配置 --> 
-				 <prop key="hibernate.dialect">org.hibernate.dialect.SQLServer2012Dialect</prop> 
+				<!-- <prop key="hibernate.dialect">org.hibernate.dialect.SQLServer2012Dialect</prop> -->
 				<!-- Oracle的Dialect方言配置 --> 
 				<!-- <prop key="hibernate.dialect">org.hibernate.dialect.OracleDialect</prop> -->
 				<prop key="hibernate.show_sql">true</prop>

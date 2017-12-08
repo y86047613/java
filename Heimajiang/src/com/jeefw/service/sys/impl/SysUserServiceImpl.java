@@ -44,9 +44,9 @@ public class SysUserServiceImpl
       sysUser.setUserName(entity.getUserName());
       sysUser.setSex(entity.getSex());
       if (entity.getSex().shortValue() == 1) {
-        sysUser.setSexCn("��");
+        sysUser.setSexCn("男");
       } else if (entity.getSex().shortValue() == 2) {
-        sysUser.setSexCn("��");
+        sysUser.setSexCn("女");
       }
       sysUser.setEmail(entity.getEmail());
       sysUser.setPhone(entity.getPhone());
@@ -60,9 +60,9 @@ public class SysUserServiceImpl
       sysUser.setPassword(entity.getPassword());
       sysUser.setRoleCn(this.sysUserDao.getRoleValueBySysUserId(entity.getId()));
       if (entity.getStatus().booleanValue()) {
-        sysUser.setStatusCn("��");
+        sysUser.setStatusCn("是");
       } else {
-        sysUser.setStatusCn("��");
+        sysUser.setStatusCn("否");
       }
       sysUser.setLastLoginTime(entity.getLastLoginTime());
       sysUser.setScore(entity.getScore());
